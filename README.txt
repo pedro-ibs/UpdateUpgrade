@@ -1,1 +1,2 @@
-Update operating system (linux), lazy way. Use command sudo bash update-upgrade.sh
+# Minha Lista
+Lista de programas para ser istalados em um linux apos ser istalado
