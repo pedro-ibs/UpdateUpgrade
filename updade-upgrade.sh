@@ -5,13 +5,18 @@ sudo apt upgrade
 sudo apt install apache2 -y
 sudo apt install php libapache2-mod-php -y
 sudo apt install python -y python2.7 python3 -y
-sudo apt install mysql mysql-server mysql-client mycli -y
+sudo apt install mysql-server mysql-client mycli -y
 sudo apt install mariadb-client mariadb-server -y
 sudo apt install php-mysql -y
 ######################################################################
-# sudo apt install default-jre -y default-jdk -y
+sudo apt install default-jre default-jdk -y
 sudo apt install  openjdk-8-jdk
 sudo apt install librxtx-java -y
+cd /usr/lib/jvm/java-8-openjdk-amd64/lib/amd64/
+sudo cp /usr/lib/jni/librxtx* . 
+cd /usr/lib/jvm/java-8-openjdk-amd64/jre/lib/
+sudo cp /usr/share/java/RXTX* .
+sudo chmod +x RXTX*
 #######################################################################
 sudo apt install gcc make cmake dkms build-essential libusb-1.0.0-dev -y
 sudo apt install gcc-arm-none-eabi stm32flash -y
